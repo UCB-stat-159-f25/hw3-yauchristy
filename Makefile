@@ -22,5 +22,5 @@ html:
 clean : 
     # clean up the figures, audio and _build folders.
     rm -rf figures/*
-    rm -rf audios/*
+    rm -rf audio/*
     rm -rf _builds/*
