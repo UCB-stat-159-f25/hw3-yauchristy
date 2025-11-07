@@ -23,4 +23,4 @@ clean :
     # clean up the figures, audio and _build folders.
     rm -rf figures/*
     rm -rf audio/*
-    rm -rf _builds/*
+    rm -rf _build/*
