@@ -1,0 +1,9 @@
+Prompt:makefile for creating and configuring environment. update the environment with a provided environment.yml file
+Output: 
+@if conda env list | grep -q "$(ENV_NAME)"; then \
+    echo "Environment exists. Updating..."; \
+    conda env update -f $(ENV_FILE) -n $(ENV_NAME); \
+else \
+    echo "Environment does not exist. Creating..."; \
+    conda env create -f $(ENV_FILE) -n $(ENV_NAME); \
+fi
